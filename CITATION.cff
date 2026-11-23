@@ -7,7 +7,7 @@ authors:
     affiliation: Independent Researcher
     orcid: "https://orcid.org/0009-0007-1288-3292"
     email: Parkeremmerson@icloud.com
-version: "6"
+version: "7"
 date-released: "2026-11-23"
 license: CC-BY-4.0
 repository-code: "https://github.com/sphereofrealization/alpoge-certified-lean-derivation-does-not-prove-the-riemann-hypothesis"
@@ -38,5 +38,5 @@ preferred-citation:
       email: Parkeremmerson@icloud.com
   year: 2026
   month: 11
-  notes: "Version 6, 23 November 2026"
+  notes: "Version 7, 23 November 2026"
   url: "https://github.com/sphereofrealization/alpoge-certified-lean-derivation-does-not-prove-the-riemann-hypothesis"

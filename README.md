@@ -7,11 +7,11 @@ Independent Researcher<br>
 ORCID [0009-0007-1288-3292](https://orcid.org/0009-0007-1288-3292)<br>
 Parkeremmerson@icloud.com
 
-Version 6, 23 November 2026
+Version 7, 23 November 2026
 
-**[Read the note (PDF, 49 pages)](Alpoge_Certified_Lean_Derivation_Does_Not_Prove_the_Riemann_Hypothesis_v6.pdf)**
+**[Read the note (PDF, 50 pages)](Alpoge_Certified_Lean_Derivation_Does_Not_Prove_the_Riemann_Hypothesis_v7.pdf)**
 
-![Graphical abstract. Left: what the certified derivation establishes outright. Centre: the four combinations of "the law holds" and "the rules are consistent," of which the certificate excludes one. Right: the sponsor, the consistency of the rules.](Alpoge_Certified_Lean_Derivation_Does_Not_Prove_the_Riemann_Hypothesis_v6_graphical_abstract.png)
+![Graphical abstract. Left: what the certified derivation establishes outright. Centre: the four combinations of "the law holds" and "the rules are consistent," of which the certificate excludes one. Right: the sponsor, the consistency of the rules.](Alpoge_Certified_Lean_Derivation_Does_Not_Prove_the_Riemann_Hypothesis_v7_graphical_abstract.png)
 
 ## The statement of the note
 
@@ -36,22 +36,24 @@ The note reads the certified derivation against the published list of the 1,484,
 
 ## Files
 
-- **[The note](Alpoge_Certified_Lean_Derivation_Does_Not_Prove_the_Riemann_Hypothesis_v6.pdf)** (PDF, 49 pages).
-- **[The LaTeX source of the note](Alpoge_Certified_Lean_Derivation_Does_Not_Prove_the_Riemann_Hypothesis_v6.tex).** It compiles on its own with `pdflatex`.
-- **[The executed notebook](Alpoge_Certified_Lean_Derivation_Does_Not_Prove_the_Riemann_Hypothesis_v6_SI.ipynb).** It reproduces every reading and every number that the note reports.
-- **[The Lean file](Alpoge_Certified_Lean_Derivation_Does_Not_Prove_the_Riemann_Hypothesis_v6_Lean/CompletenessOfValues.lean)**, in [a folder](Alpoge_Certified_Lean_Derivation_Does_Not_Prove_the_Riemann_Hypothesis_v6_Lean) with its build files and the log of a successful build. It holds the statements of the note that concern the prover's own rules, checked in Lean 4.33.1, the version to which the certified archive is pinned. The file is self-contained: it uses the prover's prelude and no library.
-- **[The graphical abstract](Alpoge_Certified_Lean_Derivation_Does_Not_Prove_the_Riemann_Hypothesis_v6_graphical_abstract.png).**
+- **[The note](Alpoge_Certified_Lean_Derivation_Does_Not_Prove_the_Riemann_Hypothesis_v7.pdf)** (PDF, 50 pages).
+- **[The LaTeX source of the note](Alpoge_Certified_Lean_Derivation_Does_Not_Prove_the_Riemann_Hypothesis_v7.tex).** It compiles on its own with `pdflatex`.
+- **[The executed notebook](Alpoge_Certified_Lean_Derivation_Does_Not_Prove_the_Riemann_Hypothesis_v7_SI.ipynb).** It reproduces every reading and every number that the note reports.
+- **[The Lean file](Alpoge_Certified_Lean_Derivation_Does_Not_Prove_the_Riemann_Hypothesis_v7_Lean/CompletenessOfValues.lean)**, in [a folder](Alpoge_Certified_Lean_Derivation_Does_Not_Prove_the_Riemann_Hypothesis_v7_Lean) with its build files and the log of a successful build. It holds the statements of the note that concern the prover's own rules, checked in Lean 4.33.1, the version to which the certified archive is pinned. The file is self-contained: it uses the prover's prelude and no library.
+- **[The graphical abstract](Alpoge_Certified_Lean_Derivation_Does_Not_Prove_the_Riemann_Hypothesis_v7_graphical_abstract.png).**
 
-The files of version 5 remain in the repository under their own names.
+The files of earlier versions remain in the repository under their own names.
 
-## Version 6
+## Versions 6 and 7
 
 Version 6 corrects one item of versions 3 to 5. Those versions said that the declarations which tie a divisor record to a family are not in the exported proof. That was wrong: `GeoTiedP`, the archive's tie condition with four further conditions attached, is in it. Version 6 reads that declaration and reports what the archive shows: the exported proof establishes `GeoTiedP` for the degenerate model, and the weaker statements `GeoTied` and `FormsTieX` are not drawn. The correction follows [a comment by I. Dixit](https://github.com/ishaan2006/rh-lean-reproduction/issues/1), whose list of names is the note's data. The note's argument about what a certified derivation establishes is unchanged.
+
+Version 7 adds two things to version 6. It confirms the corrected reading from the references between compiled declarations published by J. Shore: in the closure of the five theorems the term of `geoOver_stages` refers to the degenerate record and family, and the families in the closure are `famFlJ` and the transport of a given one. And it states how the three published counts of the exported proof (1,484,733, 1,478,243 and 1,468,418) agree.
 
 ## Checking the Lean file
 
 ```
-cd Alpoge_Certified_Lean_Derivation_Does_Not_Prove_the_Riemann_Hypothesis_v6_Lean
+cd Alpoge_Certified_Lean_Derivation_Does_Not_Prove_the_Riemann_Hypothesis_v7_Lean
 lake build
 ```
 
@@ -59,7 +61,7 @@ The file `lean-toolchain` pins the prover to version 4.33.1; with `elan` install
 
 ## Running the notebook
 
-The notebook is delivered executed, and its outputs can be read as they stand. To run it again it needs Python 3 with `numpy` and `scipy`, the programs `git`, `curl` and `grep`, and Lean 4.33.1 on the path. It clones a copy of the archive ([jsmorph/rh](https://github.com/jsmorph/rh), about 1.7 GB on disk) into the folder from which it is run, checks the commit of that copy, and fetches single files of the Lean core library, of Mathlib and of the published list of the names in the exported proof. With the archive in place it runs in about a minute and a half.
+The notebook is delivered executed, and its outputs can be read as they stand. To run it again it needs Python 3 with `numpy`, `scipy` and `duckdb`, the programs `git`, `curl` and `grep`, and Lean 4.33.1 on the path. It clones a copy of the archive ([jsmorph/rh](https://github.com/jsmorph/rh), about 1.7 GB on disk) into the folder from which it is run, checks the commit of that copy, and fetches single files of the Lean core library, of Mathlib and of the published list of the names in the exported proof, and two tables of the dependency dataset of J. Shore (about 94 MB). With the archive in place it runs in about a minute and a half.
 
 From the archive the notebook prints statement lines and definitions; of proofs it prints counts of names and no text.
 
@@ -71,6 +73,7 @@ From the archive the notebook prints statement lines and definitions; of proofs 
 - J. Stephens, the copy of the archive that was read, at commit `ecd09ff9b4aaf6c08f2b5ef17dc49ca9648a77de`: <https://github.com/jsmorph/rh>
 - I. Dixit, reproduction of the build, with the list of the names in the exported proof, at commit `a36105bec79a25ab7847441683fb693c5e7572b5`: <https://github.com/ishaan2006/rh-lean-reproduction>
 - I. Dixit, comment of 23 November 2026 on what the list is and on two cautions in reading it: <https://github.com/ishaan2006/rh-lean-reproduction/issues/1>
+- J. Shore, the declarations that the proof uses, with the references between compiled declarations (dataset v0.2.1), at commit `70fbb2fc21fed8de3c02d9f6df0b6067bf22e879`: <https://github.com/james-shore/rh-proof-dependencies>
 - A. Lipponen, independent verification, at commit `905943b8950179296a1ab29db5ebf03495e709f1`: <https://github.com/aapolipponen/rh-lean-check-lumi>
 - The Lean 4 core library at version 4.33.1, and Mathlib at commit `0df444a360eaa60ab8c11dca51a86af692955474`.
 
@@ -78,7 +81,7 @@ The reference list of the note gives the full record.
 
 ## Citing the note
 
-Parker Emmerson (Yaohushuason), *Alpöge's Certified Lean Derivation Does Not Prove the Riemann Hypothesis: Granting Every Check, the Hypothesis Follows from a Premise Stronger Than Itself*, version 6, 23 November 2026. <https://github.com/sphereofrealization/alpoge-certified-lean-derivation-does-not-prove-the-riemann-hypothesis>
+Parker Emmerson (Yaohushuason), *Alpöge's Certified Lean Derivation Does Not Prove the Riemann Hypothesis: Granting Every Check, the Hypothesis Follows from a Premise Stronger Than Itself*, version 7, 23 November 2026. <https://github.com/sphereofrealization/alpoge-certified-lean-derivation-does-not-prove-the-riemann-hypothesis>
 
 ```bibtex
 @unpublished{emmerson2026alpoge,
@@ -86,7 +89,7 @@ Parker Emmerson (Yaohushuason), *Alpöge's Certified Lean Derivation Does Not Pr
   title  = {Alp{\"o}ge's Certified {Lean} Derivation Does Not Prove the {Riemann} Hypothesis: Granting Every Check, the Hypothesis Follows from a Premise Stronger Than Itself},
   year   = {2026},
   month  = nov,
-  note   = {Version 6, 23 November 2026},
+  note   = {Version 7, 23 November 2026},
   url    = {https://github.com/sphereofrealization/alpoge-certified-lean-derivation-does-not-prove-the-riemann-hypothesis}
 }
 ```
