@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "To cite this note or its files, please use the reference below."
+title: "Alpöge's Certified Lean Derivation Does Not Prove the Riemann Hypothesis: Granting Every Check, the Hypothesis Follows from a Premise Stronger Than Itself"
+authors:
+  - given-names: Parker
+    family-names: "Emmerson (Yaohushuason)"
+    affiliation: Independent Researcher
+    orcid: "https://orcid.org/0009-0007-1288-3292"
+    email: Parkeremmerson@icloud.com
+version: "5"
+date-released: "2026-11-23"
+license: CC-BY-4.0
+repository-code: "https://github.com/sphereofrealization/alpoge-certified-lean-derivation-does-not-prove-the-riemann-hypothesis"
+url: "https://github.com/sphereofrealization/alpoge-certified-lean-derivation-does-not-prove-the-riemann-hypothesis"
+abstract: "On 20 November 2026 Levent Alpöge released a note stating his belief that he has proved the Riemann hypothesis, with an archive for the Lean theorem prover in which the argument is formalized “without assumptions,” and on 21 November the Lean and Mathlib communities certified the statement and the derivation. This note establishes that the certified derivation does not prove the Riemann hypothesis. It derives the sentence of the hypothesis in the prover's rules, and in three senses a derivation in those rules is not a proof of the hypothesis. First, it does not establish that the hypothesis holds of the whole numbers. Outright it establishes that a whole number at which the law failed would yield a derivation of False in the rules; the law itself follows from one premise, its sponsor: the consistency of the rules. That sponsor is a stronger statement than the hypothesis; the rules leave it underived if it holds, and they derive that they are right about this law exactly when they derive the law (Löb, 1955); every derivation of it elsewhere rests on a further sponsor of the same kind, along the progression of stronger systems that Turing described in 1939; and none of the four checks of the certification tests it. Second, it is not a proof from the zeta series: on the half-plane where the series converges the sentence receives both truth values, and the derivation takes the continuation, the excluded middle and clauses that write “0” from the rules. Third, it is not a certified proof in the set theory to which the word “proved” ordinarily refers: the rules derive a statement of arithmetic that this set theory leaves underived. The note then reads the certified derivation against the published list of the names in the exported proof. The absence of zeros is produced at one step, by the refutation of a supposed zero of a continued function; the derivation exhibits no zero; among its premises is a theorem whose constant is asserted through a division on a supposed real zero (Siegel, 1935); and the condition that the archive names for geometry is filled by the one that holds of every object, the condition that asks for a geometric witness being absent from the exported proof. On 23 November 2026 the public record still listed two runs of the check as unfinished. Statements about the rules are checked in Lean 4.33.1; a notebook reproduces the readings."
+keywords:
+  - "Riemann hypothesis"
+  - "formal proof"
+  - "Lean theorem prover"
+  - "Mathlib"
+  - "zeta series"
+  - "analytic continuation"
+  - "excluded middle"
+  - "incompleteness"
+  - "consistency"
+  - "Löb's theorem"
+  - "Turing progression"
+  - "Markov's principle"
+  - "completion by clause"
+preferred-citation:
+  type: unpublished
+  title: "Alpöge's Certified Lean Derivation Does Not Prove the Riemann Hypothesis: Granting Every Check, the Hypothesis Follows from a Premise Stronger Than Itself"
+  authors:
+    - given-names: Parker
+      family-names: "Emmerson (Yaohushuason)"
+      affiliation: Independent Researcher
+      orcid: "https://orcid.org/0009-0007-1288-3292"
+      email: Parkeremmerson@icloud.com
+  year: 2026
+  month: 11
+  notes: "Version 5, 23 November 2026"
+  url: "https://github.com/sphereofrealization/alpoge-certified-lean-derivation-does-not-prove-the-riemann-hypothesis"

@@ -1,0 +1,50 @@
+ℹ [2/3] Built CompletenessOfValues (924ms)
+info: CompletenessOfValues.lean:484:0: 'CompletenessOfValues.nat_div_completed' depends on axioms: [propext]
+info: CompletenessOfValues.lean:485:0: 'CompletenessOfValues.nat_mod_completed' depends on axioms: [propext]
+info: CompletenessOfValues.lean:486:0: 'CompletenessOfValues.nat_sub_completed' does not depend on any axioms
+info: CompletenessOfValues.lean:487:0: 'CompletenessOfValues.nat_pred_completed' does not depend on any axioms
+info: CompletenessOfValues.lean:488:0: 'CompletenessOfValues.counter_inscription_unfolds' does not depend on any axioms
+info: CompletenessOfValues.lean:489:0: 'CompletenessOfValues.apart_unfolds' does not depend on any axioms
+info: CompletenessOfValues.lean:490:0: 'CompletenessOfValues.false_has_no_case' does not depend on any axioms
+info: CompletenessOfValues.lean:491:0: 'CompletenessOfValues.decided_in_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CompletenessOfValues.lean:492:0: 'CompletenessOfValues.excluded_middle_from_selection' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CompletenessOfValues.lean:493:0: 'CompletenessOfValues.decided_in_value_from_selection' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CompletenessOfValues.lean:494:0: 'CompletenessOfValues.value' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CompletenessOfValues.lean:495:0: 'CompletenessOfValues.value_true_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CompletenessOfValues.lean:496:0: 'CompletenessOfValues.value_false_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CompletenessOfValues.lean:497:0: 'CompletenessOfValues.value_total' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CompletenessOfValues.lean:498:0: 'CompletenessOfValues.both_values' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CompletenessOfValues.lean:499:0: 'CompletenessOfValues.underived_from_formation_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CompletenessOfValues.lean:500:0: 'CompletenessOfValues.selection_fixes' does not depend on any axioms
+info: CompletenessOfValues.lean:501:0: 'CompletenessOfValues.selected_sentence_has_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CompletenessOfValues.lean:502:0: 'CompletenessOfValues.certificate_passage_iff_markov' does not depend on any axioms
+info: CompletenessOfValues.lean:503:0: 'CompletenessOfValues.markov_in_completed_rules' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CompletenessOfValues.lean:504:0: 'CompletenessOfValues.halts_of_exists' does not depend on any axioms
+info: CompletenessOfValues.lean:505:0: 'CompletenessOfValues.step_wf' does not depend on any axioms
+info: CompletenessOfValues.lean:506:0: 'CompletenessOfValues.searchFrom' does not depend on any axioms
+info: CompletenessOfValues.lean:507:0: 'CompletenessOfValues.present' does not depend on any axioms
+info: CompletenessOfValues.lean:508:0: 'CompletenessOfValues.presentFromRefutation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CompletenessOfValues.lean:509:0: 'CompletenessOfValues.completed' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CompletenessOfValues.lean:510:0: 'CompletenessOfValues.completed_presented' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CompletenessOfValues.lean:511:0: 'CompletenessOfValues.completed_clause' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CompletenessOfValues.lean:512:0: 'CompletenessOfValues.presented_of_apart' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CompletenessOfValues.lean:513:0: 'CompletenessOfValues.clause_gives_double_negation' does not depend on any axioms
+info: CompletenessOfValues.lean:514:0: 'CompletenessOfValues.backward_of_excluded_middle' does not depend on any axioms
+info: CompletenessOfValues.lean:515:0: 'CompletenessOfValues.double_negation_of_backward' depends on axioms: [propext]
+info: CompletenessOfValues.lean:516:0: 'CompletenessOfValues.excluded_middle_of_backward' depends on axioms: [propext]
+info: CompletenessOfValues.lean:517:0: 'CompletenessOfValues.backward_reading_iff_excluded_middle' depends on axioms: [propext]
+info: CompletenessOfValues.lean:518:0: 'CompletenessOfValues.backward_in_completed_rules' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CompletenessOfValues.lean:520:0: 'CompletenessOfValues.derived_law_on_sponsor' does not depend on any axioms
+info: CompletenessOfValues.lean:521:0: 'CompletenessOfValues.excludes_fourth_case' does not depend on any axioms
+info: CompletenessOfValues.lean:522:0: 'CompletenessOfValues.first_three_cases_admitted' does not depend on any axioms
+info: CompletenessOfValues.lean:523:0: 'CompletenessOfValues.fourth_case_refuted' does not depend on any axioms
+info: CompletenessOfValues.lean:524:0: 'CompletenessOfValues.conditional_is_not_exclusive' does not depend on any axioms
+info: CompletenessOfValues.lean:525:0: 'CompletenessOfValues.no_rung_closes' does not depend on any axioms
+info: CompletenessOfValues.lean:526:0: 'CompletenessOfValues.Derivability.chain' does not depend on any axioms
+info: CompletenessOfValues.lean:527:0: 'CompletenessOfValues.Derivability.under' does not depend on any axioms
+info: CompletenessOfValues.lean:528:0: 'CompletenessOfValues.Derivability.lob' does not depend on any axioms
+info: CompletenessOfValues.lean:529:0: 'CompletenessOfValues.Derivability.lob_iff' does not depend on any axioms
+info: CompletenessOfValues.lean:530:0: 'CompletenessOfValues.Derivability.underived_consistency' does not depend on any axioms
+info: CompletenessOfValues.lean:534:0: 7
+info: CompletenessOfValues.lean:535:0: 7
+Build completed successfully (3 jobs).

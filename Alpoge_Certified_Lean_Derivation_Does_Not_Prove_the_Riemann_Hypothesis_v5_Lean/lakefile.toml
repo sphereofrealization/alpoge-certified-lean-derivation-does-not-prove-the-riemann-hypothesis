@@ -1,0 +1,6 @@
+name = "CompletenessOfValues"
+version = "5.0.0"
+defaultTargets = ["CompletenessOfValues"]
+
+[[lean_lib]]
+name = "CompletenessOfValues"
